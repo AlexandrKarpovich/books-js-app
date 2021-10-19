@@ -1,0 +1,26 @@
+.grid {
+    display: grid;
+    /*grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));*/
+    grid-auto-flow: column;
+    gap: 30px;
+}
+.card {
+    margin: 0;
+}
+.card__title {
+
+}
+.card__price {
+
+}
+.card__img img {
+    width: 100%;
+    height: 505px;
+    object-fit: contain;
+}
+.card__descrp {
+
+}
+.card__btn {
+
+}
