@@ -1,10 +1,15 @@
-# Simple js app
+# [Simple js app](https://alexandrkarpovich.github.io/simple-js-app/)
 
-css:
-    Grid, flexbox
-    
+now :
+- html
+- css: Grid, flexbox
+- js: native js ^es5
 
-## 
 
+will then:
+- webpack 
+- pug
+- scss
+- js
 
 
