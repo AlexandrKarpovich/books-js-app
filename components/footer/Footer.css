@@ -1,11 +1,7 @@
-.header {
+.footer {
     display: flex;
     height: 50px;
     padding: var(--spacing-small);
     background-color: var(--color-medium);
-    margin-bottom: 50px;
-}
-.counter {
-    display: flex;
-    justify-content: flex-end;
+    margin-top: 50px;
 }

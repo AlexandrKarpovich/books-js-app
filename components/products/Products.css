@@ -1,26 +1,52 @@
 .grid {
     display: grid;
-    /*grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));*/
-    grid-auto-flow: column;
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
 }
 .card {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #808080;
+    background-color: #ffffff;
+
 }
 .card__title {
-
+    margin-bottom: auto;
+    font-weight: bold;
+    display: block;
 }
 .card__price {
-
+    margin-top: var(--spacing-medium);
+    color: var(--color-unaccent);
 }
 .card__img img {
     width: 100%;
-    height: 505px;
+    /*height: 505px;*/
     object-fit: contain;
 }
 .card__descrp {
-
+    font-weight: 200;
+    font-size: 15px;
 }
 .card__btn {
-
+    margin-top: var(--spacing-medium);
+    padding: var(--spacing-small) var(--spacing-medium);
+    border: 1px solid var(--color-unaccent);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    outline: none;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
 }
+.card__btn_active {
+    border: 1px solid transparent;
+    background-image: var(--linear-gradient);
+}
+
