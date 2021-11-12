@@ -10,10 +10,10 @@ class Products {
 
         if(pushProduct) {
             element.classList.add(this.classNameActive)
-            element.innerHTML = this.labelAdd
+            element.innerHTML = this.labelRemove
         } else {
             element.classList.remove(this.classNameActive)
-            element.innerHTML = this.labelRemove
+            element.innerHTML = this.labelAdd
         }
 
         headerPage.render(products.length)
@@ -29,6 +29,8 @@ class Products {
 
             if(productsStore.indexOf(id) === -1) {
                 activeText = this.labelAdd;
+
+
             } else {
                 activeClass = this.classNameActive;
                 activeText = this.labelRemove;
@@ -61,4 +63,3 @@ class Products {
 }
 
 const productsPage = new Products();
-productsPage.render();

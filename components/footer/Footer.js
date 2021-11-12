@@ -4,7 +4,7 @@ class Footer {
         const html = `
             <div class="container">
                 <div class="counter">
-                   🔥 77
+<!--                   🔥 77-->
                 </div>
             </div>
         `;
