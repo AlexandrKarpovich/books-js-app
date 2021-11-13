@@ -11,7 +11,7 @@ let CATALOG = [];
 
 // http://myjson.dit.upm.es/api/bins/76y9
 // server/catalog.json
-fetch('http://myjson.dit.upm.es/api/bins/76y9')
+fetch('https://myjson.dit.upm.es/api/bins/76y9')
     .then(res => res.json())
     .then(body => {
         CATALOG = body;
