@@ -5,18 +5,26 @@ function render() {
     productsPage.render();
 }
 
+spinnerPage.render();
+
 let CATALOG = [];
 
 // http://myjson.dit.upm.es/api/bins/76y9
 // server/catalog.json
-fetch('server/catalog.json')
+fetch('http://myjson.dit.upm.es/api/bins/76y9')
     .then(res => res.json())
     .then(body => {
         CATALOG = body;
-        render();
+
+        setTimeout(() => {
+            spinnerPage.handleClear();
+            render();
+        }, 1000);
+
+
     })
     .catch(error => {
-        console.log(error);
+        errorPage.render();
     })
 
 

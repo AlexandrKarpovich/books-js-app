@@ -3,6 +3,8 @@
     --color-white: #fff;
     --color-unaccent: #808080;
     --color-medium: #e8e8e8;
+    --color-error-light: #f26b6b;
+    --color-error-dark: #d65c5c;
 
     --spacing-small: 10px;
     --spacing-medium: 15px;
@@ -35,9 +37,11 @@ body {
     padding: 0 20px;
 }
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: space-between;
-    height: 100vh;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+.main {
+    margin: 0 auto;
+    max-width: 80vh;
 }
