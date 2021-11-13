@@ -5,7 +5,7 @@ class Products {
         this.labelRemove = 'Удалить из корзины';
     }
 
-    handlerSetLocalStorage(element, id) {
+    handleSetLocalStorage(element, id) {
         const { pushProduct, products } = localStorageUtil.putProducts(id);
 
         if(pushProduct) {
@@ -16,7 +16,8 @@ class Products {
             element.innerHTML = this.labelAdd
         }
 
-        headerPage.render(products.length)
+        headerPage.render(products.length);
+        console.log('Hello')
     }
 
     render() {
@@ -42,7 +43,7 @@ class Products {
                     <span class="card__title">${name}</span>
                     <span class="card__price">${price.toLocaleString()} 💰</span>
                     <p class="card__descrp">${description}</p>
-                    <button class="card__btn ${activeClass}" onclick="productsPage.handlerSetLocalStorage(this, '${id}');">
+                    <button class="card__btn ${activeClass}" onclick="productsPage.handleSetLocalStorage(this, '${id}')">
                         ${activeText}
                     </button>
                 </div>

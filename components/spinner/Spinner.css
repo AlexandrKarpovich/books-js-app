@@ -19,6 +19,7 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
+    z-index: -1;
 }
 .spinner__img {
     width: 200px;
