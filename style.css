@@ -41,7 +41,7 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
-.main {
-    margin: 0 auto;
-    max-width: 80vh;
-}
+/*.main {*/
+/*    margin: 0 auto;*/
+/*    max-width: 80vh;*/
+/*}*/
