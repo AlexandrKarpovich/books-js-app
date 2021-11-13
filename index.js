@@ -19,7 +19,7 @@ fetch('https://myjson.dit.upm.es/api/bins/76y9')
         setTimeout(() => {
             spinnerPage.handleClear();
             render();
-        }, 1000);
+        }, 500);
 
 
     })
