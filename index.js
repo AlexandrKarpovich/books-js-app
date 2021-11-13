@@ -23,7 +23,8 @@ fetch('http://myjson.dit.upm.es/api/bins/76y9')
 
 
     })
-    .catch(error => {
+    .catch( error => {
+        spinnerPage.handleClear();
         errorPage.render();
     })
 
