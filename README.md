@@ -1,15 +1,7 @@
-# [Simple js app](https://alexandrkarpovich.github.io/simple-js-app/)
+# [Books js app](https://alexandrkarpovich.github.io/books-js-app/)
 
-now :
-- html
-- css: Grid, flexbox
-- js: native js ^es5
+it is simple project native js 
 
-
-will then:
-- webpack 
-- pug
-- scss
-- js
+html, css: Grid, flexbox, js: native js ^es5
 
 
